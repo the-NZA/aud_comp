@@ -1,3 +1,21 @@
 :root{
-	--main-black: #000000;
+	/* --main-black: #000000; */
+	--main-white: #ffffff;
+	--main-red: #ee6352;
+	--main-blue: #00a6ed;
+	--main-orange: #ffc145;
+	--main-black: #050401;
+	--main-gray: #444444;
+
+	--ghost-white: #f0eff4;
+	
+	--offset-half: 16px;
+	--offset: 32px;
+
+	--site-width: 1300px;
+
+	
+
+
+	--btn-cub: cubic-bezier(.25,.8,.25,1);
 }

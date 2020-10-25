@@ -38,6 +38,6 @@
 		"webpack-dev-server": "^3.11.0"
 	},
 	"browserslist": [
-		"> 2%"
+		">2%", "last 2 versions"
 	]
 }

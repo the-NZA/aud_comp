@@ -89,11 +89,11 @@ module.exports = (_, opt) => {
 			compress: true,
 			writeToDisk: true,
 			overlay: true,
-			stats: {
-				chunks: false,
-				modules: false,
-				children: false
-			}
+			// stats: {
+			// 	chunks: false,
+			// 	modules: false,
+			// 	children: false
+			// }
 		},
 		module: {
 			rules: [
@@ -114,7 +114,7 @@ module.exports = (_, opt) => {
 					loader: 'vue-loader'
 				},
 				{
-					test: /\.(png|jpe?g|gif)$/i,
+					test: /\.(png|jpe?g|gif|svg)$/i,
 					use: [
 						{
 							loader: 'url-loader',
