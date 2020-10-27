@@ -3,6 +3,7 @@
 @import url("./parts/header.css"); /* Import Header Styles */
 @import url("./parts/homepage.css"); /* Import Homepage Styles */
 @import url("./parts/footer.css"); /* Import Footer Styles */
+@import url("./parts/services.css"); /* Import Services Styles */
 
 * {
 	box-sizing: border-box;
@@ -25,8 +26,24 @@ body.site_body {
 	grid-template-rows: auto 1fr auto;
 }
 
+.pages__title{
+	margin-top: calc(var(--offset) * 4);
+	margin-bottom: calc(var(--offset) * 1.5);
+	padding-bottom: calc(var(--offset) * 1.5);
+	max-width: var(--site-width);
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid var(--light-gray);
+}
 
+.pages__header{
+	font-size: 2.2rem;
+	text-align: center;
+}
 
+.pages__subheader{
+	margin-bottom: 0;
+}
 /*
 	Some later needed perks
 */

@@ -1,10 +1,12 @@
 /* IMPORT SCRIPTS */
-import Homepage from "./js/homepage"
+import Homepage from "./js/parts/homepage"
+import Services from "./js/parts/services"
 import Vue from 'vue';
 import App from '@/App.vue';
 
 window.addEventListener("DOMContentLoaded", function () {
 	Homepage();
+	Services();
 });
 
 

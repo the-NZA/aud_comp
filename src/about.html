@@ -1,12 +1,342 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title><%= htmlWebpackPlugin.options.title %></title>
 </head>
-<body>
-	<h1>About page</h1>
+
+<body class="site_body">
+	<header class="header">
+		<div class="header__container">
+			<div class="header__logo">
+				<a href="/">Logo</a>
+			</div>
+			<nav class="header__nav">
+				<ul class="menu">
+					<li class="menu__li menu__li-active"><a href="/">Главная</a></li>
+					<li class="menu__li"><a href="/services.html">Услуги</a></li>
+					<li class="menu__li"><a href="#">О компании</a></li>
+					<li class="menu__li"><a href="#">Контакты</a></li>
+					<li class="menu__li"><a href="#">Новости</a></li>
+					<li class="menu__li"><a href="#">Материалы</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="home__main">
+		<section class="home_hero">
+			<div class="home_hero__container">
+				<div class="home_hero__content">
+					<p class="hero_content__preheader">Welcome to our company</p>
+					<h1 class="hero_content__header">we guarantee you the best service</h1>
+					<p class="hero_content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum
+						dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.</p>
+
+					<a href="#" class="hero_content__btn">О компании</a>
+					<a href="#" class="hero_content__btn hero_content__btn-red">Наши услуги</a>
+				</div>
+
+				<div class="home_hero__icon">
+					<a href="#">
+						<img src="./img/hero_down.svg" alt="V">
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="new_posts">
+			<div class="new_posts__info">
+				<h2 class="home__header new_posts__header">
+					Новые публикации
+				</h2>
+				<p class="home__descr new_posts__description">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas non recusandae atque corrupti magnam,
+					itaque perspiciatis beatae fuga pariatur voluptates.
+				</p>
+				<a class="new_posts__link" href="#">Все публикации &rarr;</a>
+			</div>
+			<div class="new_posts__cards">
+				<div class="post_card">
+					<div class="post_card__image">
+					</div>
+					<div class="post_card__content">
+						<h4 class="post_card__title">
+							Post number 1
+						</h4>
+						<p class="post_card__text">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatibus ipsum soluta
+							at, repellendus et assumenda pariatur nulla autem eum magni sint consequatur libero non,
+							consequuntur eius iste, modi laudantium!
+						</p>
+						<a href="#" class="post_card__btn">Читать</a>
+					</div>
+				</div>
+				<div class="post_card">
+					<div class="post_card__image">
+					</div>
+					<div class="post_card__content">
+						<h4 class="post_card__title">
+							Post number 1
+						</h4>
+						<p class="post_card__text">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatibus ipsum soluta
+							at, repellendus et assumenda pariatur nulla autem eum magni sint consequatur libero non,
+							consequuntur eius iste, modi laudantium!
+						</p>
+						<a href="#" class="post_card__btn">Читать</a>
+					</div>
+				</div>
+				<div class="post_card">
+					<div class="post_card__image">
+					</div>
+					<div class="post_card__content">
+						<h4 class="post_card__title">
+							Post number 1
+						</h4>
+						<p class="post_card__text">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatibus ipsum soluta
+							at, repellendus et assumenda pariatur nulla autem eum magni sint consequatur libero non,
+							consequuntur eius iste, modi laudantium!
+						</p>
+						<a href="#" class="post_card__btn">Читать</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="home_services">
+			<div class="home_services__info">
+				<h2 class="home__header home_services__header">
+					Услуги и возможности
+				</h2>
+				<p class="home__descr home_services__description">
+					Полный спектр аудиторских услуг для вашего бизнеса.
+				</p>
+			</div>
+
+			<div class="home_services__cards">
+				<div class="h_service_card">
+					<div class="h_service_card__img">
+						<a href="#">
+							<img src="img/technical-support.svg" alt="service icon">
+						</a>
+					</div>
+					<h3 class="h_service_card__title">
+						<a href="#">Lorem ipsum dolor sit amet.</a>
+					</h3>
+					<div class="h_service_card__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor
+						.
+						<span class="h_service_card__icon"></span>
+					</div>
+					<div class="h_service_card__hoverdescr">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laudantium ipsum delectus
+						similique commodi nulla.
+					</div>
+				</div>
+				<div class="h_service_card">
+					<div class="h_service_card__img">
+						<a href="#">
+							<img src="img/technical-support.svg" alt="service icon">
+						</a>
+					</div>
+					<h3 class="h_service_card__title">
+						<a href="#">Lorem ipsum dolor sit amet.</a>
+					</h3>
+					<div class="h_service_card__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor
+						.
+						<span class="h_service_card__icon"></span>
+					</div>
+					<div class="h_service_card__hoverdescr">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laudantium ipsum delectus
+						similique commodi
+						nulla.
+					</div>
+				</div>
+				<div class="h_service_card">
+					<div class="h_service_card__img">
+						<a href="#">
+							<img src="img/technical-support.svg" alt="service icon">
+						</a>
+					</div>
+					<h3 class="h_service_card__title">
+						<a href="#">Lorem ipsum dolor sit amet.</a>
+					</h3>
+					<div class="h_service_card__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor
+						.
+						<span class="h_service_card__icon"></span>
+					</div>
+					<div class="h_service_card__hoverdescr">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laudantium ipsum delectus
+						similique commodi
+						nulla.
+					</div>
+				</div>
+				<div class="h_service_card">
+					<div class="h_service_card__img">
+						<a href="#">
+							<img src="img/technical-support.svg" alt="service icon">
+						</a>
+					</div>
+					<h3 class="h_service_card__title">
+						<a href="#">Lorem ipsum dolor sit amet.</a>
+					</h3>
+					<div class="h_service_card__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor
+						.
+						<span class="h_service_card__icon"></span>
+					</div>
+					<div class="h_service_card__hoverdescr">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laudantium ipsum delectus
+						similique commodi
+						nulla.
+					</div>
+				</div>
+				<div class="h_service_card">
+					<div class="h_service_card__img">
+						<a href="#">
+							<img src="img/technical-support.svg" alt="service icon">
+						</a>
+					</div>
+					<h3 class="h_service_card__title">
+						<a href="#">Lorem ipsum dolor sit amet.</a>
+					</h3>
+					<div class="h_service_card__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor
+						.
+						<span class="h_service_card__icon"></span>
+					</div>
+					<div class="h_service_card__hoverdescr">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laudantium ipsum delectus
+						similique commodi
+						nulla.
+					</div>
+				</div>
+				<div class="h_service_card">
+					<div class="h_service_card__img">
+						<a href="#">
+							<img src="img/technical-support.svg" alt="service icon">
+						</a>
+					</div>
+					<h3 class="h_service_card__title">
+						<a href="#">Lorem ipsum dolor sit amet.</a>
+					</h3>
+					<div class="h_service_card__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor
+						.
+						<span class="h_service_card__icon"></span>
+					</div>
+					<div class="h_service_card__hoverdescr">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laudantium ipsum delectus
+						similique commodi
+						nulla.
+					</div>
+				</div>
+				<div class="h_service_card">
+					<div class="h_service_card__img">
+						<a href="#">
+							<img src="img/technical-support.svg" alt="service icon">
+						</a>
+					</div>
+					<h3 class="h_service_card__title">
+						<a href="#">Lorem ipsum dolor sit amet.</a>
+					</h3>
+					<div class="h_service_card__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor
+						.
+						<span class="h_service_card__icon"></span>
+					</div>
+					<div class="h_service_card__hoverdescr">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laudantium ipsum delectus
+						similique commodi
+						nulla.
+					</div>
+				</div>
+				<div class="h_service_card">
+					<div class="h_service_card__img">
+						<a href="#">
+							<img src="img/technical-support.svg" alt="service icon">
+						</a>
+					</div>
+					<h3 class="h_service_card__title">
+						<a href="#">Lorem ipsum dolor sit amet.</a>
+					</h3>
+					<div class="h_service_card__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor
+						.
+						<span class="h_service_card__icon"></span>
+					</div>
+					<div class="h_service_card__hoverdescr">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laudantium ipsum delectus
+						similique commodi
+						nulla.
+					</div>
+				</div>
+				<div class="h_service_card">
+					<div class="h_service_card__img">
+						<a href="#">
+							<img src="img/technical-support.svg" alt="service icon">
+						</a>
+					</div>
+					<h3 class="h_service_card__title">
+						<a href="#">Lorem ipsum dolor sit amet.</a>
+					</h3>
+					<div class="h_service_card__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem, ipsum dolor. Lorem ipsum dolor
+						.
+						<span class="h_service_card__icon"></span>
+					</div>
+					<div class="h_service_card__hoverdescr">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, laudantium ipsum delectus
+						similique commodi
+						nulla.
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__copy">
+				<a class="copy__title" href="/">Company Name</a>
+				<p class="copy__text">&copy; Copyright 2020 Company Name.</p>
+				<p class="copy__text">All rights reserved.</p>
+			</div>
+			<div class="footer__links">
+				<h4 class="footer__menu_title">Меню</h4>
+				<ul class="f_links">
+					<li class="f_links__item"><a href="#">Главная</a></li>
+					<li class="f_links__item"><a href="#">Услуги</a></li>
+					<li class="f_links__item"><a href="#">О компании</a></li>
+					<li class="f_links__item"><a href="#">Контакты</a></li>
+					<li class="f_links__item"><a href="#">Новости</a></li>
+					<li class="f_links__item"><a href="#">Материалы</a></li>
+				</ul>
+			</div>
+			<div class="footer__socials">
+				<h4 class="footer__menu_title">Наши сети</h4>
+				<ul class="f_socials">
+					<li class="f_socials__item f_socials__item--tgscale"><a href="#">
+							<img src="./img/tg.svg" alt="telegram">
+						</a></li>
+					<li class="f_socials__item f_socials__item--vkscale"><a href="#">
+							<img src="./img/vk.svg" alt="vk">
+						</a></li>
+					<li class="f_socials__item"><a href="#">
+							<img src="./img/fb.svg" alt="facebook">
+						</a></li>
+					<li class="f_socials__item"><a href="#">
+							<img src="./img/inst.svg" alt="instagram">
+						</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 </body>
+
 </html>

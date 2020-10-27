@@ -146,6 +146,12 @@ module.exports = (_, opt) => {
 				template: path.resolve(__dirname, "src/about.html"),
 
 			}),
+			new HtmlWebpackPlugin({
+				filename: "services.html",
+				title: "Services page | Audit Company",
+				template: path.resolve(__dirname, "src/services.html"),
+
+			}),
 			new MiniCssExtractPlugin({
 				filename: "[name].css"
 			}),
