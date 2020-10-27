@@ -21,14 +21,41 @@
 .home_hero {
 	background-image: url("../img/hero.jpg");
 	background-attachment: fixed;
-	min-height: 90vh;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
 }
 
 .home_hero__container {
 	position: relative;
 	max-width: var(--site-width);
 	margin: 0 auto;
-	min-height: 90vh;
+	min-height: 100vh;
+}
+
+.home_hero__icon {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	bottom: 150px;
+	left: 50%;
+	opacity: .8;
+	animation: arrow_btn 2s infinite ease-in-out;
+
+	&:hover {
+		opacity: 1;
+		animation-play-state: paused;
+	}
+}
+
+@keyframes arrow_btn {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(10px);
+	}
 }
 
 .home_hero__content {
@@ -159,7 +186,7 @@
 	margin-right: 10px;
 
 	&:hover {
-		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23);
 	}
 }
 
@@ -235,7 +262,7 @@
 	position: relative;
 
 	&:hover {
-		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23);
 	}
 }
 

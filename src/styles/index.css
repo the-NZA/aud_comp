@@ -2,6 +2,7 @@
 @import url("./variables.css");
 @import url("./parts/header.css"); /* Import Header Styles */
 @import url("./parts/homepage.css"); /* Import Homepage Styles */
+@import url("./parts/footer.css"); /* Import Footer Styles */
 
 * {
 	box-sizing: border-box;
