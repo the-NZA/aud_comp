@@ -4,6 +4,7 @@
 @import url("./parts/homepage.css"); /* Import Homepage Styles */
 @import url("./parts/footer.css"); /* Import Footer Styles */
 @import url("./parts/services.css"); /* Import Services Styles */
+@import url("./parts/aboutpage.css"); /* Import Aboutpage Styles */
 
 * {
 	box-sizing: border-box;
@@ -43,7 +44,13 @@ body.site_body {
 
 .pages__subheader{
 	margin-bottom: 0;
+	margin: 0 auto 0 auto;
+	max-width: calc(var(--site-width) - 300px);
+	color: var(--main-gray);
 }
+
+
+
 /*
 	Some later needed perks
 */

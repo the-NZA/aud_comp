@@ -141,9 +141,27 @@ module.exports = (_, opt) => {
 
 			}),
 			new HtmlWebpackPlugin({
+				filename: "posts.html",
+				title: "Posts page | Audit Company",
+				template: path.resolve(__dirname, "src/posts.html"),
+
+			}),
+			new HtmlWebpackPlugin({
 				filename: "about.html",
 				title: "About page | Audit Company",
 				template: path.resolve(__dirname, "src/about.html"),
+
+			}),
+			new HtmlWebpackPlugin({
+				filename: "contacts.html",
+				title: "Contacts page | Audit Company",
+				template: path.resolve(__dirname, "src/contacts.html"),
+
+			}),
+			new HtmlWebpackPlugin({
+				filename: "materials.html",
+				title: "Materials page | Audit Company",
+				template: path.resolve(__dirname, "src/materials.html"),
 
 			}),
 			new HtmlWebpackPlugin({

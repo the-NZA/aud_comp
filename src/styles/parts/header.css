@@ -25,7 +25,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #333333;
+	/* background-color: #333333; */
+	background-color: var(--wild_blue);
 	color: var(--ghost-white);
 	font-weight: bold;
 	
@@ -58,17 +59,20 @@
 		font-size: .9rem;
 		color: var(--main-gray);
 		text-transform: uppercase;
+		transition: all 0.3s var(--btn-cub);
 
 		&:hover {
-			text-decoration: underline;
-			color: var(--main-black);
+			/* text-decoration: underline; */
+			/* color: var(--main-black); */
+			color: var(--wild_blue);
 		}
 	}
 }
 
 .menu__li-active {
 	& a {
-		color: var(--main-black);
-		text-decoration: underline;
+		/* color: var(--main-black); */
+		color: var(--dark_blue);
+		/* text-decoration: underline; */
 	}
 }

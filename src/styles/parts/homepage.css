@@ -19,7 +19,7 @@
 
 /* Homepage Hero */
 .home_hero {
-	background-image: url("../img/hero.jpg");
+	background-image: url("../img/hero3.jpg");
 	background-attachment: fixed;
 	background-position: 0 0;
 	background-repeat: no-repeat;
@@ -32,13 +32,14 @@
 	max-width: var(--site-width);
 	margin: 0 auto;
 	min-height: 100vh;
+	filter: blur(0);
 }
 
 .home_hero__icon {
 	width: 60px;
 	height: 60px;
 	position: absolute;
-	bottom: 150px;
+	bottom: 100px;
 	left: 50%;
 	opacity: .8;
 	animation: arrow_btn 2s infinite ease-in-out;
@@ -59,7 +60,9 @@
 }
 
 .home_hero__content {
-	background-color: rgba(0,0,0, 0.4);
+	/* background-color: rgba(0,0,0, 0.4); */
+	/* background-color: var(--wild_blue); */
+	background-color: rgba(148, 170, 216, .67);
 	border-radius: 3px;
 	position: absolute;
 	top:30%;
@@ -73,7 +76,8 @@
 .hero_content__preheader {
 	font-weight: bold;
 	text-transform: uppercase;
-	color: var(--main-orange);
+	/* color: var(--main-orange); */
+	color: var(--main-white);
 	font-size: 1.3rem;
 	margin-top: calc(var(--offset) * 2);
 	transform: skew(5deg);
@@ -82,45 +86,58 @@
 .hero_content__header {
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 2.2rem;
+	font-size: 2.3rem;
 	transform: skew(5deg);
+	color: var(--dark_blue);
 }
 
 
 .hero_content__text {
 	margin-bottom: calc(var(--offset) * 2);
 	transform: skew(5deg);
+	color: var(--main-white);
+	font-weight: bold;
 }
 
 .hero_content__btn{
 	transform: skew(5deg);
 	display: inline-block;
 	padding: var(--offset-half);
-	background-color: var(--main-orange);
 	text-decoration: none;
 	color: var(--main-white);
 	font-weight: bold;
-	text-shadow: 0 0 14px rgba(12,12,12, .8);
+	/* text-shadow: 0 0 14px rgba(12,12,12, .8); */
 	border-radius: 3px;
+	/* background-color: transparent;  */
 
-	background-color: transparent; 
-	border: 4px solid var(--main-orange);
+	/* border: 4px solid var(--main-orange); */
+	border: 2px solid var(--wild_blue);
 
-	transition: background-color 0.3s var(--btn-cub);
+	background-color: var(--wild_blue);
+	transition: all 0.3s var(--btn-cub);
+
 	&:hover{
-		background-color: var(--main-orange);
+		/* background-color: var(--main-orange); */
+		/* background-color: var(--wild_blue); */
+		background-color: var(--dark_blue);
+		border-color: var(--dark_blue)
 	}
 }
 
 .hero_content__btn-red {
-	background-color: var(--main-red);
+	/* background-color: var(--main-red); */
 	background-color: transparent; 
-	border: 4px solid var(--main-red);
+	/* border: 4px solid var(--main-red); */
+	border: 2px solid var(--lavender);
 	margin-left: var(--offset-half);
-	transition: background-color 200ms linear;
+	/* transition: background-color 200ms linear; */
+	transition: all 200ms linear;
 
 	&:hover{
-		background-color: var(--main-red);
+		/* background-color: var(--main-red); */
+		background-color: var(--lavender);
+		color: var(--wild_blue);
+		border-color: var(--lavender)
 	}
 }
 
@@ -154,7 +171,8 @@
 }
 
 .new_posts__link {
-	color: var(--main-red);
+	/* color: var(--main-red); */
+	color: var(--dark_blue);
 	text-decoration: none;
 	font-weight: bold;
 	padding: var(--offset-half) 0;
@@ -168,9 +186,10 @@
 .new_posts__cards{
 	display: flex;
 	/* gap: 16px; */
-	background-color: var(--main-orange);
+	/* background-color: var(--main-orange); */
 	background-size: 50%;
-	background: linear-gradient(0, #FFFFFF 50%, var(--main-orange) 50%);
+	/* background: linear-gradient(0, #FFFFFF 50%, var(--main-orange) 50%); */
+	background: linear-gradient(0, #FFFFFF 50%, var(--lavender) 50%);
 	padding: 0 10px;
 }
 
@@ -213,18 +232,34 @@
 	margin-bottom: var(--offset-half);
 }
 
+.post_card__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
 .post_card__btn {
-	border: 2px solid var(--main-orange);
+	/* border: 2px solid var(--main-orange); */
+	border: 2px solid var(--wild_blue);
 	padding: 5px 15px;
-	display: inline-block;
+	/* display: inline-block; */
 	text-decoration: none;
 	border-radius: 3px;
 	font-weight: bold;
-	color: var(--main-orange);
+	/* color: var(--main-orange); */
+	color: var(--wild_blue);
 	transition: all 0.3s var(--btn-cub); 
 
 	&:hover {
-		background-color: var(--main-orange);
+		/* background-color: var(--main-orange); */
 		color: var(--main-white);
+		background-color: var(--wild_blue);
 	}
+}
+
+.post_card__date {
+	margin: 0;
+	color: var(--main-gray);
+	/* font-weight: bold; */
 }

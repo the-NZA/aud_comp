@@ -10,8 +10,14 @@
 	--ghost-white: #f0eff4;
 	--light-gray: #cccccc;
 	
+
+
+
 	--offset-half: 16px;
 	--offset: 32px;
+
+
+
 
 	--site-width: 1300px;
 
@@ -19,4 +25,12 @@
 
 
 	--btn-cub: cubic-bezier(.25,.8,.25,1);
+
+
+
+
+	--dark_blue: #1f467c;
+	--wild_blue: #94aad8;
+	--lavender: #e9eef7;
 }
+
