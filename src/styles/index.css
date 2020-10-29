@@ -1,10 +1,16 @@
 @import url("./normalize.css");
 @import url("./variables.css");
 @import url("./parts/header.css"); /* Import Header Styles */
-@import url("./parts/homepage.css"); /* Import Homepage Styles */
 @import url("./parts/footer.css"); /* Import Footer Styles */
+@import url("./parts/asidewidgets.css"); /* Import Aside widget Styles */
+@import url("./parts/pagination.css"); /* Import pagination Styles */
+
+/* Page Styles */
+@import url("./pages/homepage.css"); /* Import Homepage Styles */
 @import url("./parts/services.css"); /* Import Services Styles */
-@import url("./parts/aboutpage.css"); /* Import Aboutpage Styles */
+@import url("./pages/aboutpage.css"); /* Import Aboutpage Styles */
+@import url("./pages/contactspage.css"); /* Import Contactspage Styles */
+@import url("./pages/postpage.css"); /* Import Postspage Styles */
 
 * {
 	box-sizing: border-box;

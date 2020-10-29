@@ -1,0 +1,13 @@
+.about__main {
+	margin-bottom: calc(var(--offset) * 2);
+}
+
+.about__content {
+	max-width: var(--site-width);
+	margin: 0 auto;
+}
+
+.about__text{
+	font-size: 1.1rem;
+	line-height: 1.7;
+}

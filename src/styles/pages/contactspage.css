@@ -1,0 +1,13 @@
+.contacts__main {
+	margin-bottom: calc(var(--offset) * 2);
+}
+
+.contacts__content {
+	max-width: var(--site-width);
+	margin: 0 auto;
+}
+
+.contacts__text{
+	font-size: 1.1rem;
+	line-height: 1.7;
+}
