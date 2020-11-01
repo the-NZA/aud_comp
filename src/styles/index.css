@@ -25,7 +25,7 @@ body {
 	font-family: system-ui;
 	overflow-wrap: break-word;
 	color: var(--main-black);
-	background-color: #f8f8f8;
+	background-color: var(--body-color);
 	scroll-behavior: smooth;
 }
 

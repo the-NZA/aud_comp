@@ -64,7 +64,7 @@
 	/* background-color: rgba(0,0,0, 0.4); */
 	/* background-color: var(--wild_blue); */
 	background-color: rgba(148, 170, 216, .67);
-	border-radius: 3px;
+	border-radius: var(--border-radius);
 	position: absolute;
 	top:30%;
 	left: 0;
@@ -108,7 +108,7 @@
 	color: var(--main-white);
 	font-weight: bold;
 	/* text-shadow: 0 0 14px rgba(12,12,12, .8); */
-	border-radius: 3px;
+	border-radius: var(--border-radius);
 	/* background-color: transparent;  */
 
 	/* border: 4px solid var(--main-orange); */
@@ -189,7 +189,7 @@
 	/* background-color: var(--main-orange); */
 	background-size: 50%;
 	/* background: linear-gradient(0, #FFFFFF 50%, var(--main-orange) 50%); */
-	background: linear-gradient(0, #FFFFFF 50%, var(--lavender) 50%);
+	background: linear-gradient(0, var(--body-color) 50%, var(--lavender) 50%);
 	padding: 0 10px;
 }
 

@@ -20,6 +20,7 @@ function hoverIcons() {
 
 export default function Services() {
 	if (document.querySelector(".services")) {
-		hoverIcons();
+		// hoverIcons();
+		console.log("This is services scrtipts placeholder");
 	}
 }
