@@ -1,36 +1,35 @@
 :root{
 	/* --main-black: #000000; */
 	--main-white: #ffffff;
-	--main-red: #ee6352;
 	--main-blue: #00a6ed;
-	--main-orange: #ffc145;
 	--main-black: #050401;
 	--main-gray: #444444;
-
 	--ghost-white: #f0eff4;
 	--light-gray: #cccccc;
 	
+	/* new colors */
+	--dark_blue: #1f467c;
+	--wild_blue: #94aad8;
+	--lavender: #e9eef7;
+
+	--main-red: #ee6352;
+	--main-orange: #ffc145;
 
 
 
+	/* Offsets */
 	--offset-half: 16px;
 	--offset: 32px;
 
 
 
-
+	/* Sizes */
 	--site-width: 1300px;
 
-	
 
+	/* Border radious */
+	--brad: 3px;
 
+	/* Anim func */
 	--btn-cub: cubic-bezier(.25,.8,.25,1);
-
-
-
-
-	--dark_blue: #1f467c;
-	--wild_blue: #94aad8;
-	--lavender: #e9eef7;
 }
-

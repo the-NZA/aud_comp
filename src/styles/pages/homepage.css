@@ -39,7 +39,8 @@
 	width: 60px;
 	height: 60px;
 	position: absolute;
-	bottom: 100px;
+	/* bottom: 100px; */
+	bottom: 5%;
 	left: 50%;
 	opacity: .8;
 	animation: arrow_btn 2s infinite ease-in-out;
