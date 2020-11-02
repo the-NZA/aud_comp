@@ -19,7 +19,8 @@
 
 /* Homepage Hero */
 .home_hero {
-	background-image: url("../img/hero3.jpg");
+	/* background-image: url("../img/hero3.jpg"); */
+	background-image: url("../img/test_bg3.jpg");
 	background-attachment: fixed;
 	background-position: 0 0;
 	background-repeat: no-repeat;
@@ -44,6 +45,7 @@
 	left: 50%;
 	opacity: .8;
 	animation: arrow_btn 2s infinite ease-in-out;
+	cursor: pointer;
 
 	&:hover {
 		opacity: 1;
