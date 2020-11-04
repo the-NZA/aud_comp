@@ -66,7 +66,7 @@
 		font-size: .9rem;
 		color: var(--main-gray);
 		text-transform: uppercase;
-		transition: all 0.3s var(--btn-cub);
+		transition: var(--main-transition);
 
 		&:hover {
 			/* text-decoration: underline; */

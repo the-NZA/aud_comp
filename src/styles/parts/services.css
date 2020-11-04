@@ -67,7 +67,7 @@
 		text-decoration: none;
 		color: var(--main-black);
 
-		transition: all 0.3s var(--btn-cub);
+		transition: var(--main-transition);
 	
 		&:hover {
 			/* text-decoration: underline; */

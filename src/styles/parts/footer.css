@@ -30,7 +30,7 @@
 	&:hover{
 		/* text-decoration: underline; */
 		color: var(--dark_blue);
-		transition: all 0.3s var(--btn-cub);
+		transition: var(--main-transition);
 	}
 }
 
@@ -95,6 +95,7 @@
 		opacity: .65;
 		display: block;
 		min-width: 25px;
+		transition: var(--main-transition);
 
 		&:hover {
 			opacity: 1;

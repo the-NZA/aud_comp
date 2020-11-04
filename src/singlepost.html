@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="site_body">
+	<header class="header">
+		<div class="header__container">
+			<div class="header__logo">
+				<a href="/">
+					<img class="header__logoimg" src="img/logo.jpg" alt="AKG Nikolaev">
+				</a>
+			</div>
+			<nav class="header__nav">
+				<ul class="menu">
+					<li class="menu__li"><a href="/">Главная</a></li>
+					<li class="menu__li"><a href="/services.html">Услуги</a></li>
+					<li class="menu__li"><a href="/about.html">О компании</a></li>
+					<li class="menu__li"><a href="/contacts.html">Контакты</a></li>
+					<li class="menu__li"><a href="/posts.html">Новости</a></li>
+					<li class="menu__li"><a href="/materials.html">Материалы</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="singlepost__main">
+		<div class="singlepost__headerimg" style="background-image: url(img/singlepost.jpg);"></div>
+
+		<div class="singlepost__title">
+			<h1 class=" pages__header singlepost__header">
+				Название поста
+			</h1>
+
+			<div class="singlepost__subheader">
+				<div class="singlepost__info">
+					<div class="singlepost__category">
+						<a href="/posts.html">Категория</a>
+					</div>
+					<div class="singlepost__date">02.11.2020</div>
+				</div>
+
+				<div class="singlepost__share">
+					<ul class="share__links">
+						<li class="share__link share__link--scaledtg">
+							<a href="#">
+								<img src="img/tg.svg" alt="Telegram">
+							</a>
+						</li>
+						<li class="share__link share__link--scaledvk">
+							<a href="#">
+								<img src="img/vk.svg" alt="VK">
+							</a>
+						</li>
+						<li class="share__link">
+							<a href="#">
+								<img src="img/fb.svg" alt="Facebook">
+							</a>
+						</li>
+						<li class="share__link">
+							<a href="#">
+								<img src="img/inst.svg" alt="Instagram">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div> 
+
+		<article class="singlepost__content">
+			<p class="singlepost__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iste iusto delectus quis consequatur dolores
+			suscipit perspiciatis voluptatem culpa maxime.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iste iusto delectus quis consequatur dolores suscipit perspiciatis voluptatem culpa maxime.</p>
+			<p class="singlepost__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iste iusto delectus quis consequatur dolores
+			suscipit perspiciatis voluptatem culpa maxime.Exercitationem repudiandae quos accusantium autem natus repellat maiores dicta maxime ea blanditiis ipsa esse laborum, earum illo! Minima, ipsum magni?</p>
+			<p class="singlepost__text">Maxime facilis maiores placeat suscipit, assumenda hic molestias labore alias qui accusantium. Voluptate laboriosam aspernatur cumque fuga minus commodi eos.</p>
+			<p class="singlepost__text">Officiis, eius excepturi sed ea libero mollitia obcaecati corrupti maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iste iusto delectus quis consequatur dolores
+			suscipit perspiciatis voluptatem culpa maxime.Nobis sunt eum voluptate eligendi facere laudantium, nemo vitae reprehenderit!</p>
+			<p class="singlepost__text">Laboriosam ipsam ullam numquam soluta at quia iure recusandae voluptatem itaque Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iste iusto delectus quis consequatur dolores
+			suscipit perspiciatis voluptatem culpa maxime.dolorem possimus explicabo earum, a eaque, distinctio laborum esse!</p>
+			<p class="singlepost__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iste sunt architecto, excepturi assumenda error tempore unde fugit praesentium corrupti hic sint. Sed rerum consequuntur doloribus ea atque corrupti quidem quasi eius quam ipsa facilis nemo debitis a eaque in, non porro. Quidem dignissimos commodi, aperiam rerum impedit iusto esse.</p>
+		</article>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__copy">
+				<a class="copy__title" href="/">Company Name</a>
+				<p class="copy__text">&copy; Copyright 2020 Company Name.</p>
+				<p class="copy__text">&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved.</p>
+			</div>
+			<div class="footer__links">
+				<h4 class="footer__menu_title">Меню</h4>
+				<ul class="f_links">
+					<li class="f_links__item"><a href="/">Главная</a></li>
+					<li class="f_links__item"><a href="/services.html">Услуги</a></li>
+					<li class="f_links__item"><a href="/about.html">О компании</a></li>
+					<li class="f_links__item"><a href="/contacts.html">Контакты</a></li>
+					<li class="f_links__item"><a href="/posts.html">Новости</a></li>
+					<li class="f_links__item"><a href="/materials.html">Материалы</a></li>
+				</ul>
+			</div>
+			<div class="footer__socials">
+				<h4 class="footer__menu_title">Наши сети</h4>
+				<ul class="f_socials">
+					<li class="f_socials__item f_socials__item--tgscale"><a href="#">
+							<img src="./img/tg.svg" alt="telegram">
+						</a></li>
+					<li class="f_socials__item f_socials__item--vkscale"><a href="#">
+							<img src="./img/vk.svg" alt="vk">
+						</a></li>
+					<li class="f_socials__item"><a href="#">
+							<img src="./img/fb.svg" alt="facebook">
+						</a></li>
+					<li class="f_socials__item"><a href="#">
+							<img src="./img/inst.svg" alt="instagram">
+						</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -30,6 +30,7 @@
 
 	/* Sizes */
 	--site-width: 1300px;
+	--post-width: 980px;
 
 
 	/* Border radious */
@@ -37,4 +38,5 @@
 
 	/* Anim func */
 	--btn-cub: cubic-bezier(.25,.8,.25,1);
+	--main-transition: all 0.3s var(--btn-cub);
 }

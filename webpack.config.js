@@ -165,6 +165,11 @@ module.exports = (_, opt) => {
 
 			}),
 			new HtmlWebpackPlugin({
+				filename: "singlepost.html",
+				title: "Single Post Page | Audit Company",
+				template: path.resolve(__dirname, "src/singlepost.html"),
+
+			}), new HtmlWebpackPlugin({
 				filename: "services.html",
 				title: "Services page | Audit Company",
 				template: path.resolve(__dirname, "src/services.html"),

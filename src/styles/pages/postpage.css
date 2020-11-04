@@ -47,7 +47,7 @@
 	position: relative;
 	background-color: var(--main-white);
 	box-shadow: var(--main-shadow);
-	transition: all 0.3s var(--btn-cub); 
+	transition: var(--main-transition); 
 	border-radius: var(--border-radius);
 
 
@@ -101,7 +101,7 @@
 	font-weight: bold;
 	/* color: var(--main-orange); */
 	color: var(--wild_blue);
-	transition: all 0.3s var(--btn-cub); 
+	transition: var(--main-transition); 
 
 	&:hover {
 		/* background-color: var(--main-orange); */

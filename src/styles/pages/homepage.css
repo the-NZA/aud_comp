@@ -117,7 +117,7 @@
 	border: 2px solid var(--wild_blue);
 
 	background-color: var(--wild_blue);
-	transition: all 0.3s var(--btn-cub);
+	transition: var(--main-transition);
 
 	&:hover{
 		/* background-color: var(--main-orange); */
