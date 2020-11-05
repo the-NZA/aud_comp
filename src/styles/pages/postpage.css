@@ -21,7 +21,7 @@
 }
 
 .posts__widget{
-	position: fixed;
+	/* position: fixed; */
 	position: sticky;
 	top: 80px;
 

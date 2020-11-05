@@ -12,6 +12,7 @@
 @import url("./pages/contactspage.css"); /* Import Contactspage Styles */
 @import url("./pages/postpage.css"); /* Import Postspage Styles */
 @import url("./pages/singlepostpage.css"); /* Import Singpostpage Styles */
+@import url("./pages/materialspage.css"); /* Import Materialpage Styles */
 
 * {
 	box-sizing: border-box;
