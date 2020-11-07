@@ -59,7 +59,52 @@ body.site_body {
 	color: var(--main-gray);
 }
 
+/* Animation classes */
+.animated{
+	animation-timing-function: ease-in-out;
+	animation-duration: 200ms;
+	animation-fill-mode: both;
+}
 
+@keyframes showModalBg {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes hideModalBg {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(100%);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideDown {
+	from {
+		transform: translateY(0);
+	}
+
+	to {
+		transform: translateY(100%);
+	}
+}
 
 /*
 	Some later needed perks

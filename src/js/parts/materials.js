@@ -1,5 +1,3 @@
-import { doc } from "prettier";
-
 function toggleCards() {
 	const categories = document.querySelectorAll(".mcat");
 	categories.forEach(cat => {
@@ -19,23 +17,37 @@ function toggleCards() {
 }
 
 function modal() {
-	const allBtns = document.querySelectorAll(".mcat__showall");
-	const modal = document.querySelector(".materials__all");
-	const closeBtn = modal.querySelector(".matfull__close");
+	const showBtns = document.querySelectorAll(".mcat__showall");
 
-	allBtns.forEach(btn => {
+	const modal = document.querySelector(".matfull")
+	const closeBtn = modal.querySelector(".matfull__close")
+	const modalBox = modal.querySelector(".matfull__container")
+
+	showBtns.forEach(btn => {
 		btn.addEventListener("click", e => {
 			/* For track what API call must use */
 			console.log(e.target.dataset.slug);
 
-			modal.classList.add("materials__all--active", "matfull__show");
 			document.body.style.overflow = "hidden";
+			modal.classList.add("animated", "matfull--active", "matfull-anim-show")
+			modalBox.classList.add("animated", "matfull__container--show")
 		});
 	});
 
 	closeBtn.addEventListener("click", () => {
-		modal.classList.remove("materials__all--active", "matfull__show");
 		document.body.style.overflow = "auto";
+
+		modalBox.classList.remove("matfull__container--show")
+		modalBox.classList.add("matfull__container--hide")
+
+		modal.classList.remove("matfull-anim-show")
+		modal.classList.add("matfull-anim-hide")
+
+		window.setTimeout(() => {
+			modalBox.classList.remove("matfull__container--hide")
+			modal.classList.remove("matfull--active", "matfull-anim-hide")
+		}, 250)
+
 	});
 }
 

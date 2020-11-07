@@ -188,53 +188,21 @@
 
 	background-color: rgba(0,0,0,.2);
 	z-index: 2;
-	display: flex;
+	/* display: flex; */
 
 	display: none;
-	/* opacity: 0; */
-	transition: var(--main-transition);
-	animation-timing-function: ease-in-out;
-	animation-duration: 350ms;
-	animation-delay: 0ms;
-	animation-fill-mode: both;
 }
 
-.materials__all--active {
+.matfull--active {
 	display: flex;
-	/* opacity: 1; */
 }
 
-.matfull__show {
-	animation-name: animBgShow;
+.matfull-anim-show {
+	animation-name: showModalBg;
 }
 
-.materials__all--active > .matfull__container {
-	animation-timing-function: ease-in-out;
-	animation-duration: 350ms;
-	animation-delay: 0ms;
-	animation-fill-mode: both;
-	animation-name: animShow;
-}
-
-@keyframes animBgShow {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes animShow {
-	0% {
-		transform: translateY(5000px);
-	}
-	50% {
-		transform: translateY(1000px);
-	}
-	100% {
-		transform: translate(0);
-	}
+.matfull-anim-hide{
+	animation-name: hideModalBg;
 }
 
 .matfull__container {
@@ -248,6 +216,14 @@
 	max-height: 90vh;
 
 	box-shadow: 0 5px 10px rgba(0, 0, 0, .3) 
+}
+
+.matfull__container--show {
+	animation-name: slideUp;
+}
+
+.matfull__container--hide{
+	animation-name: slideDown;
 }
 
 .matfull__header {
