@@ -4,6 +4,7 @@
 @import url("./parts/footer.css"); /* Import Footer Styles */
 @import url("./parts/asidewidgets.css"); /* Import Aside widget Styles */
 @import url("./parts/pagination.css"); /* Import pagination Styles */
+@import url("./animations.css"); /* Import Styles for animations */
 
 /* Page Styles */
 @import url("./pages/homepage.css"); /* Import Homepage Styles */
@@ -57,53 +58,6 @@ body.site_body {
 	margin: 0 auto 0 auto;
 	max-width: calc(var(--site-width) - 300px);
 	color: var(--main-gray);
-}
-
-/* Animation classes */
-.animated{
-	animation-timing-function: ease-in-out;
-	animation-duration: 200ms;
-	animation-fill-mode: both;
-}
-
-@keyframes showModalBg {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes hideModalBg {
-	from {
-		opacity: 1;
-	}
-
-	to {
-		opacity: 0;
-	}
-}
-
-@keyframes slideUp {
-	from {
-		transform: translateY(100%);
-	}
-
-	to {
-		transform: translateY(0);
-	}
-}
-
-@keyframes slideDown {
-	from {
-		transform: translateY(0);
-	}
-
-	to {
-		transform: translateY(100%);
-	}
 }
 
 /*

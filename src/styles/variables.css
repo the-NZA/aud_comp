@@ -32,6 +32,12 @@
 	--site-width: 1300px;
 	--post-width: 980px;
 
+	/* Breakpoints */
+	--medium: 980px;
+	--small: 760px;
+	--tiny: 560px;
+	--xtiny: 480px;
+
 
 	/* Border radious */
 	--border-radius: 3px; 
@@ -39,4 +45,11 @@
 	/* Anim func */
 	--btn-cub: cubic-bezier(.25,.8,.25,1);
 	--main-transition: all 0.3s var(--btn-cub);
+}
+
+@media screen and (width <= 980px) {
+	
+	:root {
+		--site-width: 980px;
+	}
 }

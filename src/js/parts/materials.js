@@ -1,3 +1,5 @@
+import { ToggleBodyScroll } from "./helpers";
+
 function toggleCards() {
 	const categories = document.querySelectorAll(".mcat");
 	categories.forEach(cat => {
@@ -28,14 +30,14 @@ function modal() {
 			/* For track what API call must use */
 			console.log(e.target.dataset.slug);
 
-			document.body.style.overflow = "hidden";
+			ToggleBodyScroll();
 			modal.classList.add("animated", "matfull--active", "matfull-anim-show")
 			modalBox.classList.add("animated", "matfull__container--show")
 		});
 	});
 
 	closeBtn.addEventListener("click", () => {
-		document.body.style.overflow = "auto";
+		ToggleBodyScroll();
 
 		modalBox.classList.remove("matfull__container--show")
 		modalBox.classList.add("matfull__container--hide")
