@@ -7,6 +7,7 @@ function mobileMenu() {
 	const menu = header.querySelector(".menu");
 
 	mobtoggler.addEventListener("click", () => {
+		ToggleBodyScroll();
 		mobtoggler.classList.toggle("header__mobtoggler--active");
 
 		if (nav.classList.contains("header__nav--active")) {
@@ -25,7 +26,6 @@ function mobileMenu() {
 			menu.classList.add("animated", "menu--show");
 		}
 
-		ToggleBodyScroll();
 	});
 }
 
