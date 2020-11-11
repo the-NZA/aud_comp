@@ -267,13 +267,15 @@
 
 	.header__nav {
 		top: 65px;
-		height: 93vh;
+		height: 94vh;
 	}
 }
 
 @media screen and (width <=580px) {
 	.header__nav {
 		justify-content: center;
+		height: 93vh;
+		padding-bottom: var(--offset);
 	}
 }
 
@@ -281,6 +283,11 @@
 	.menu {
 		max-height: 460px;
 		min-width: 320px;
+	}
+
+	.header__nav{
+		height: 92vh;
+		padding-bottom: calc(var(--offset) * 1.5);
 	}
 }
 
