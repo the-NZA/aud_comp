@@ -5,7 +5,7 @@
 
 @media screen and (width <= 1300px){
 	.services {
-		padding: var(--offset-half);
+		padding:  0 var(--offset-half);
 	}
 }
 
@@ -108,7 +108,7 @@
 	}
 
 	.services {
-		padding: var(--offset-half);
+		padding: 0 var(--offset-half);
 	}
 
 	.services__cards {

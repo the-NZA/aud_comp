@@ -1,17 +1,8 @@
 .contacts__main {
-	margin-bottom: calc(var(--offset) * 2);
 }
 
 .contacts__content {
-	max-width: var(--site-width);
-	margin: 0 auto;
-	background-color: var(--main-white);
-	padding: var(--offset-half) var(--offset);
-	border-radius: var(--border-radius);
-	box-shadow: var(--main-shadow);
 }
 
 .contacts__text{
-	font-size: 1.1rem;
-	line-height: 1.7;
 }
