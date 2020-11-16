@@ -3,6 +3,10 @@
 	padding: var(--offset-half) 0;
 
 	margin-bottom: var(--offset);
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 	/* color: var(--dark_blue); */
 }
 
