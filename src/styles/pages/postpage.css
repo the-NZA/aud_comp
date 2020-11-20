@@ -61,9 +61,13 @@
 
 	.posts__aside {
 		background-color: var(--main-white);
-		padding: var(--offset) var(--offset-half);
+		padding: var(--offset-half);
 		box-shadow: var(--main-shadow);
 		border-radius: var(--border-radius);
+	}
+
+	.posts__widget {
+		padding: 0;
 	}
 
 	.posts__cards {
