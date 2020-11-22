@@ -70,7 +70,7 @@ function detectSafari() {
 export default function Materials() {
 	if (document.querySelector(".materials")) {
 		toggleCards();
-		detectSafari();
+		// detectSafari();
 		modal();
 	}
 }
