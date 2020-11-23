@@ -130,6 +130,15 @@
 		display: flex;
 		justify-content: space-between;
 	}
+
+	.materials__all{
+		padding: 0;
+	}
+
+	.matfull__container {
+		max-height: 100%;
+		border-radius: 0;
+	}
 }
 
 @media screen and (width <= 600px) {
@@ -165,6 +174,18 @@
 		display: block;
 	}
 
+	.matfull__cards{
+		background-color: var(--main-white);
+		box-shadow: none;
+		padding: 0;
+	}
+
+	.mfcard{
+		border: 2px solid var(--lavender);
+		border-radius: var(--border-radius);
+		box-shadow: none;
+	}
+
 	.mcard__header{
 		display: grid;
 		grid-template-areas: "title tog"
@@ -185,58 +206,6 @@
 		margin: 0;
 	}
 }
-
-@media screen and (width <= 420px) and (height <= 900px) {
-	.matfull{
-		padding: 0;
-	}
-	.matfull__container{
-		width: 100%;
-		min-height: 100%;
-		border-radius: 0;
-		height: 100%;
-	}
-
-	.mcard__header{
-		grid-template-areas: "title title title"
-		"date date tog";
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-	}
-	.mcard__toggle{
-		justify-self: flex-end;
-	}
-
-	.matfull__cards {
-		padding: 2px;
-		background-color: var(--main-white);
-		box-shadow: none;
-		min-height:  75vh;
-		max-height: 85vh;
-	}
-
-	.mfcard {
-		/* box-shadow: var(--hover-shadow); */
-		/* box-shadow: none; */
-		box-shadow: none;
-		border: 2px solid var(--lavender);
-	}
-}
-
-@media screen and (width <= 380px) and (height <= 812px) {
-	.matfull__cards {
-		max-height: 80vh;
-	}
-}
-
-@media screen and (width == 414px) and (height == 736px) {
-	.matfull__cards {
-		max-height: 80vh;
-	}
-}
-
 
 .materials__widget{
 	position: sticky;
