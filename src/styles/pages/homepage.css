@@ -428,7 +428,14 @@
 	height: auto;
 	margin: 0 auto var(--offset) auto;
 }
+.homeservices_card__img a {
+	display: block;
+}
 
+.homeservices_card__img a img {
+	max-width: 100%;
+	display: block;
+}
 .homeservices_card__icon{
 
 }

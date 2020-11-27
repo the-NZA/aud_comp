@@ -419,6 +419,9 @@
 	overflow: scroll;
 	scrollbar-width: none;
 
+	display: flex;
+	flex-direction: column;
+
 	border: var(--offset) solid var(--main-white);
 	/* max-height: 90vh; */
 
@@ -428,6 +431,7 @@
 /* * Hide scrollbar */
 ::-webkit-scrollbar {
 	width: 0;
+	height: 0;
 }
 
 .matfull__container--show {
@@ -507,6 +511,7 @@
 
 .matfull__cards {
 	/* overflow-y: auto; */
+	flex-grow: 1;
 	overflow: auto;
 	background-color: var(--ghost-white);
 	/* max-height: 750px; */
