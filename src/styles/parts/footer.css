@@ -2,6 +2,7 @@
 	border-top: 1px solid var(--light-gray);
 	/* background-color: #f0f0f0; */
 	background-color: var(--ghost-white);
+	align-self: flex-end;
 }
 
 .footer__container {
