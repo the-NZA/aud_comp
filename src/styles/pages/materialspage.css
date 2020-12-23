@@ -213,7 +213,7 @@
 }
 
 .materials__category {
-	padding: var(--offset);
+	padding: calc(var(--offset) * 1.5) var(--offset);
 	border-radius: var(--border-radius);
 	box-shadow: var(--main-shadow);
 	margin-bottom: calc(var(--offset) * 2);
@@ -230,7 +230,7 @@
 
 .mcat__header{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: flex-start; 
 	margin-bottom: var(--offset);
 }
@@ -238,6 +238,7 @@
 .mcat__title {
 	/* min-width: 250px; */
 	min-width: 150px;
+	font-size: 1.3rem;
 	/* flex-basis: 250px; */
 	margin: 0 var(--offset) 0 0 ;
 }
@@ -250,7 +251,7 @@
 .mcat__container {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: var(--offset);
+	margin-bottom: calc(var(--offset) * 1.5);
 }
 
 .mcard {

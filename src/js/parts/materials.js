@@ -1,4 +1,5 @@
 import { ToggleBodyScroll } from "./helpers";
+import smoothscroll from 'smoothscroll-polyfill';
 
 function toggleCards() {
 	const categories = document.querySelectorAll(".mcat");
@@ -12,14 +13,12 @@ function toggleCards() {
 				}
 			})
 		});
-
-
 	});
 
 }
 
-function modal() {
-	const showBtns = document.querySelectorAll(".mcat__showall");
+function modal(selector) {
+	const showBtns = document.querySelectorAll(selector);
 
 	const modal = document.querySelector(".matfull")
 	const closeBtn = modal.querySelector(".matfull__close")
@@ -64,6 +63,32 @@ function detectSafari() {
 	}
 }
 
+function scrollMatCats() {
+	smoothscroll.polyfill();
+
+	const widgetCategories = document.querySelector(".widget__categories");
+	const menuLinks = widgetCategories.querySelectorAll("a");
+
+	menuLinks.forEach(link => {
+		link.addEventListener("click", e => {
+			const toScroll = document.querySelector(`.materials__category[data-section="${e.target.dataset.slug}"]`);
+			const pos = toScroll.getBoundingClientRect();
+
+			window.scrollTo({
+				behavior: "smooth", top: pos.y
+			});
+		});
+	});
+
+	widgetCategories.addEventListener("click", e => {
+		if (e.target.dataset.slug) {
+			menuLinks.forEach(link => {
+				link.classList.remove("active");
+			});
+			e.target.classList.add("active");
+		}
+	});
+}
 
 
 
@@ -71,6 +96,8 @@ export default function Materials() {
 	if (document.querySelector(".materials")) {
 		toggleCards();
 		// detectSafari();
-		modal();
+		scrollMatCats();
+		modal(".mcat__showall"); // modal open for show all btns
+		modal(".widget__categories li a"); // modal open for sidebar menu
 	}
 }
