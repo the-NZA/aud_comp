@@ -44,3 +44,7 @@
 .widget__content ul li a:hover {
 	color: var(--main-black);
 }
+
+.widget__categories li a { 
+	cursor: pointer;	
+}

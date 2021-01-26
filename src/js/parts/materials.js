@@ -27,7 +27,7 @@ function modal(selector) {
 	showBtns.forEach(btn => {
 		btn.addEventListener("click", e => {
 			/* For track what API call must use */
-			console.log(e.target.dataset.slug);
+			// console.log(e.target.dataset.slug);
 
 			ToggleBodyScroll();
 			modal.classList.add("animated", "matfull--active", "matfull-anim-show")
@@ -36,7 +36,7 @@ function modal(selector) {
 	});
 
 	closeBtn.addEventListener("click", () => {
-		ToggleBodyScroll();
+		document.body.style.overflow = ""
 
 		modalBox.classList.remove("matfull__container--show")
 		modalBox.classList.add("matfull__container--hide")
@@ -97,7 +97,7 @@ export default function Materials() {
 		toggleCards();
 		// detectSafari();
 		scrollMatCats();
-		modal(".mcat__showall"); // modal open for show all btns
-		modal(".widget__categories li a"); // modal open for sidebar menu
+		// modal(".mcat__showall"); // modal open for show all btns
+		// modal(".widget__categories li a"); // modal open for sidebar menu
 	}
 }

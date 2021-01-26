@@ -8,10 +8,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const cssLoaders = isDev => {
 	const loaders = [
 		// "style-loader",
-		"vue-style-loader",
-		{
-			loader: MiniCssExtractPlugin.loader,
-		},
+		// "vue-style-loader",
+		// {
+		// 	loader: MiniCssExtractPlugin.loader,
+		// },
+		isDev ? "vue-style-loader" : MiniCssExtractPlugin.loader,
 		{
 			loader: "css-loader",
 			options: {
@@ -84,7 +85,7 @@ module.exports = (_, opt) => {
 		devtool: isDev ? "eval" : false,
 		mode: isDev ? 'development' : 'production',
 		devServer: {
-			port: 8080,
+			port: 8081,
 			contentBase: path.join(__dirname, 'dist'),
 			compress: true,
 			writeToDisk: true,
@@ -111,7 +112,7 @@ module.exports = (_, opt) => {
 				},
 				{
 					test: /\.vue$/,
-					loader: 'vue-loader'
+					loader: 'vue-loader',
 				},
 				{
 					test: /\.(png|jpe?g|gif|svg)$/i,

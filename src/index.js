@@ -13,15 +13,19 @@ window.addEventListener("DOMContentLoaded", function () {
 	Header();
 });
 
-
-
-
 Vue.config.productionTip = false;
 
-if (document.querySelector("#app")) {
-	new Vue({
-		render: h => h(App),
-	}).$mount('#app')
+if (document.querySelector(".materials__main")) {
+	const show_all_btn = document.querySelectorAll(".mcat__showall");
+	show_all_btn.forEach(b => {
+		b.addEventListener("click", e => {
+			Vue.prototype.$fetch_slug = e.target.dataset.slug;
+
+			new Vue({
+				render: h => h(App),
+			}).$mount('#modal_app')
+		})
+	});
 }
 
 
