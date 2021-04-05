@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require("webpack");
 
 const cssLoaders = isDev => {
 	const loaders = [
@@ -195,6 +196,9 @@ module.exports = (_, opt) => {
 				options: {
 					concurrency: 100
 				}
+			}),
+			new webpack.DefinePlugin({
+				IS_DEV: isDev
 			})
 		],
 		resolve: {

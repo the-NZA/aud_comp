@@ -421,7 +421,10 @@
 }
 
 .homeservices_card{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .homeservices_card__img{
@@ -436,6 +439,7 @@
 .homeservices_card__img a img {
 	max-width: 100%;
 	display: block;
+	min-width: 130px;
 }
 .homeservices_card__icon{
 

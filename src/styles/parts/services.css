@@ -41,6 +41,9 @@
 		max-width: 140px;
 		max-height: 140px;
 	}
+	.service_card__img img {
+		min-width: 140px;
+	}
 
 	.service_card__title {
 		border: none;
@@ -106,6 +109,9 @@
 		max-width: 120px;
 		max-height: 120px;
 	}
+	.service_card__img img {
+		min-width: 120px;
+	}
 
 	.services {
 		padding: 0 var(--offset-half);
@@ -147,6 +153,7 @@
 		display: block;
 		max-width: 100%;
 		height: auto;
+		min-width: 180px;
 	}
 }
 

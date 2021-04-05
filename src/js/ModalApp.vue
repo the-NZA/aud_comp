@@ -4,7 +4,6 @@
 			<div
 				v-if="showModal"
 				@click.self="closeModal"
-				id="modal_app"
 				class="mat_modal"
 			>
 				<transition name="slide">
@@ -25,7 +24,11 @@
 								class="mat_modal__close"
 							>
 								<img
-									src="img/close.svg"
+									:src="
+										path(
+											'img/close.svg'
+										)
+									"
 									alt="X"
 								/>
 							</button>
@@ -43,10 +46,7 @@
 						<div v-else class="mat_modal__cards">
 							<div
 								v-for="card in Cards()"
-								v-bind:key="
-									card.time.$date
-										.$numericLong
-								"
+								v-bind:key="card.time"
 								class="modalcard"
 							>
 								<div class="modalcard__header">
@@ -92,13 +92,16 @@
 </template>
 
 <script>
+	import Loader from "./components/Loader";
 	function sleep(ms) {
 		return new Promise((resolve) => setTimeout(resolve, ms));
 	}
 	export default {
 		name: "App",
 		components: {
-			Loader: () => import("./components/Loader"),
+			Loader,
+			/* Async Component generates separate files */
+			// Loader: () => import("./components/Loader"),
 		},
 		data() {
 			return {
@@ -150,6 +153,9 @@
 						);
 					});
 				}
+			},
+			path(url) {
+				return this.$IS_DEV ? url : `/static/${url}`;
 			},
 		},
 		created() {
@@ -228,6 +234,82 @@
 
 	background-color: rgba(0, 0, 0, 0.2);
 	z-index: 2;
+
+	padding: var(--offset-half);
+}
+
+@media screen and (max-width: 980px) {
+	.mat_modal__container {
+		border-width: var(--offset-half);
+		min-height: 95vh;
+		max-height: 100vh;
+	}
+
+	.mat_modal__header {
+		padding-bottom: var(--offset-half);
+	}
+
+	.mat_modal__cards {
+		padding: var(--offset-half) var(--offset-half) 0 var(--offset-half);
+	}
+
+	.modalcard {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.modalcard__body {
+		margin-top: auto;
+	}
+
+	.modalcard__header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.modalcard__title {
+		align-self: flex-start;
+		margin-bottom: calc(var(--offset-half) / 2);
+	}
+
+	.mat_modal__cards::after {
+		height: 1px;
+	}
+}
+
+@media screen and (max-width: 880px) {
+	.mat_modal__cards {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.mat_modal__header {
+		grid-auto-rows: repeat(3, 1fr);
+	}
+
+	.mat_modal__descr {
+		grid-column: 1/3;
+	}
+
+	.mat_modal__search {
+		grid-column: 1/3;
+		grid-row-start: 3;
+		justify-self: start;
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.mat_modal {
+		padding: 0;
+	}
+
+	.mat_modal__container {
+		height: 100%;
+		border-radius: 0;
+	}
 }
 
 .mat_modal__container {
@@ -269,16 +351,19 @@
 }
 
 .mat_modal__title {
+	/* grid-area: modal_title; */
 	margin: 0;
 }
 
 .mat_modal__descr {
+	/* grid-area: modal_descr; */
 	grid-row-start: 2;
 	margin: 0;
 	color: var(--main-gray);
 }
 
 .mat_modal__close {
+	/* grid-area: modal_btn; */
 	justify-self: end;
 	align-self: flex-start;
 	appearance: none;
@@ -305,6 +390,7 @@
 }
 
 .mat_modal__search {
+	/* grid-area: modal_search; */
 	grid-row-start: 2;
 	max-width: 250px;
 	max-height: calc(var(--offset) * 1.5);
