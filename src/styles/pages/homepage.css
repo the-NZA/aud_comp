@@ -282,8 +282,11 @@
 }
 
 .new_posts__container{
-	display: flex;
+	/* display: flex; */
 	/* background-color: var(--main-orange); */
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0 10px;
 	background-size: 50%;
 	/* background: linear-gradient(0, #FFFFFF 50%, var(--main-orange) 50%); */
 	background: linear-gradient(0, var(--body-color) 50%, var(--lavender) 50%);
